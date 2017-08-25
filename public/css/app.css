@@ -8421,6 +8421,14 @@ p {
   color: #fff;
 }
 
+#logout {
+  cursor: default;
+}
+
+#logout:hover {
+  background-color: transparent;
+}
+
 /* footer */
 
 footer {
@@ -8512,7 +8520,6 @@ textarea,
 select,
 .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
   margin-bottom: 15px;
 }
 
