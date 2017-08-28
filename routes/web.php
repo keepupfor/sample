@@ -31,3 +31,5 @@ Route::group(['namespace'=>'Auth','prefix'=>'password'],function (){
     Route::get('/reset/{token}', 'ResetPasswordController@showResetForm')->name('password.reset');
     Route::post('/reset', 'ResetPasswordController@reset')->name('password.update');
 });
+
+Route::resource('statuses', 'StatusesController',['only'=>['store','destroy']]);
